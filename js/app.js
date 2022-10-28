@@ -5,7 +5,7 @@ let guessName = prompt('What is your name?');
 // console.log(`Welcome to my page ${guessName}! Please answer yes or no to a few quick questions.`);
 alert(`Welcome to my page ${guessName}! Please answer yes or no to a few quick questions.`);
 
-function questionOne() {
+function firstQuestion() {
   let questionOne = prompt('Have you ever been to Disney World?').toUpperCase();
   if(questionOne === 'YES' || questionOne === 'Y') {
   // console.log(`YES! ${guessName}! Correct me too!`);
@@ -15,9 +15,9 @@ function questionOne() {
     alert(`NO, ${guessName}! too bad me neither!`);
   }
 } 
-questionOne();
+firstQuestion();
 
-function questionTwo() {
+function secondQuestion() {
   let questionTwo = prompt('Did you have a good day?').toUpperCase();
   if(questionTwo === 'YES' || questionTwo === 'Y') {
     // console.log(`Correct! ${guessName}! I am glad to hear that!`);
@@ -27,9 +27,9 @@ function questionTwo() {
     alert(`WRONG! But ${guessName}! I hope tommorrow is better!`);
   }
 }
-questionTwo();
+secondQuestion();
 
-function questionThree() {
+function thirdQuestion() {
   let questionThree = prompt('Have you ever played Monopoly?').toUpperCase();
   if(questionThree === 'YES' || questionThree === 'Y') {
   // console.log(`Right Answer! ${guessName}! I love that game.`);
@@ -39,9 +39,9 @@ function questionThree() {
     alert(`${guessName}! Wrong Answer! You are missing out on some fun!`);
   }
 }
-questionThree();
+thirdQuestion();
 
-function questionFour() {
+function fourthQuestion() {
   let questionFour = prompt('Would you ever go sky diving?').toUpperCase();
   if(questionFour === 'YES' || questionFour === 'Y') {
   // console.log(`True! ${guessName}! I hope to go someday as well.`);
@@ -51,9 +51,9 @@ function questionFour() {
     alert(`Incorrect! ${guessName}! wish you would at leasr try.`);
   }
 }
-questionFour();
+fourthQuestion();
 
-function questionFive() {
+function fifthQuestion() {
   let questionFive = prompt('Do you use social media?').toUpperCase();
   if(questionFive === 'YES' || questionFive === 'Y') {
   // console.log(`${guessName}! Right Answer! I love all platforms.`);
@@ -63,9 +63,9 @@ function questionFive() {
     alert(`${guessName}! Incorrect! Give it one last try please.`);
   }
 }
-questionFive();
+fifthQuestion();
 
-function favColor() {
+function sixthQuestion() {
   let favColor = ['black', 'red', 'yellow', 'blue'];
   let guessesLeft = 6;
   let correctAnswer = false;
@@ -86,9 +86,9 @@ function favColor() {
     guessesLeft--;
   } alert('My favorite colors are black, red, yellow, and blue!');
 }
-favColor();
+sixthQuestion();
 
-function myNumber() {
+function seventhQuestion() {
   let myNumber = 17;
 
   let guessNumber = prompt('Guess my favorite number');
@@ -102,5 +102,5 @@ function myNumber() {
     }
   }
 }
-myNumber();
+seventhQuestion();
 alert(`Thanks for participating, ${guessName}. Thank you for visiting my site!`);
